@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rock Paper Scissor Mini Game Design</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+
+		<section id="homeScreen" class="homeScreenSection">
+			<img src="images/Rock-Paper-Scissor.png">
+			<input id="PoientInput" max="50" min="1" type="number" placeholder="Wine Poient Set">
+			<input id="ponentSubmit" type="submit" value="Play With Computer">
+		</section>
+
+		<section id="gameScreen" class="homeScreenSection disNone">
+			<h1>Win Poient : <span id="wpSet">0</span></h1>
+			<h2>You Poient : <span id="youShow">0</span></h2>
+			<h2>Computer Poient : <span id="comShow">0</span></h2>
+
+			<div class="gameIcon">
+				<i value="Rock" id="icon1" class="fa-solid fa-hand-back-fist"></i>
+				<i value="Paper" id="icon2" class="fa-solid fa-hand"></i>
+				<i value="Seissor" id="icon3" class="fas fa-hand-scissors"></i>
+			</div>
+
+			<h3 class="">You Select : <span id="youSelect"></span></h3>
+			<h3 class="">Computer Select : <span id="comSelect"></span></h3>
+		</section>
+
+		<section id="winSection" class="homeScreenSection win disNone">
+			<h1 id="result"></h1>
+			<img id="winIMG" src="images/wine.png">
+			<div class="footer">
+				<div id="homeBack">Home</div>
+				<div id="rePlay">Play Again</div>
+			</div>
+		</section>
+
+	<script src="js/castom.js"></script>
+	</body>
+</html>
